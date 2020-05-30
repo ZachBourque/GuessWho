@@ -1,0 +1,14 @@
+.carousel-inner {
+    max-height: 450px;
+}
+
+.carousel {
+    max-width: 450px;
+    margin: auto;
+    padding-top: 3vh;
+}
+
+.page-section p{
+    font-size: 1.5vw;
+    padding: 0;
+}

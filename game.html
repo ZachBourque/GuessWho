@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>VI Smash Guess Who</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Fonts CSS-->
+    <link rel="stylesheet" href="css/heading.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="icon" href="assets/img/download.jpg">
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Guess Who</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                        href="instructions.html" target="_blank">INSTRUCTIONS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="page-section portfolio" id="portfolio">
+        <div id="chooseCharacter">
+            <div id="headerTextWrapper" class="text-center">
+                <h2 id="headerText" class="page-section-heading text-secondary mb-0 d-inline-block">CHOOSE YOUR
+                    CHARACTER</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div id="chosenCharacter" class="col-2"></div>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Portfolio Grid Items-->
+            <div class="row">
+                <!-- Portfolio Item 1-->
+                <div id="will" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/will.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Will<br>"Flame"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div id="brady" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/brady.jpg" alt="">
+                        <p class="h2 p-2 mb-2 text-white text-center">Brady<br>"Chang"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div id="bruno" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/bruno.jpg" alt="">
+                        <p class="h2 p-2 mb-2 text-white text-center">Bruno<br>"Grumbo"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div id="davilon" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/davilon.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Davilon<br>"Davilon"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div id="john" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/john.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">John<br>"EspeonCH"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6-->
+                <div id="ethan" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/ethan.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Ethan<br>"Elnath"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 7-->
+                <div id="joel" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/joel.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Joel<br>"$teez"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 8-->
+                <div id="josh" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/josh.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Josh<br>"TangoDown"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 9-->
+                <div id="korbyn" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/korbyn.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Korbyn<br>"Moss"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 10-->
+                <div id="liam" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/liam.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Liam<br>"Limeric"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 11-->
+                <div id="linden" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/linden.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Linden<br>"Linden"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 12-->
+                <div id="zach" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/zach.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Zach<br>"ZachB"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 13-->
+                <div id="lucas" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/lucas.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Lucas<br>"Efeo"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 14-->
+                <div id="matt" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/machu.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Matt<br>"Machu"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 15-->
+                <div id="jared" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/jared.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Jared<br>"MasterNik"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 16-->
+                <div id="mike" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/mike.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Mike<br>"DieLitFan"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 17-->
+                <div id="tim" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/tim.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Tim<br>"V0re"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 18-->
+                <div id="odin" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/odin.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Odin<br>"Odii"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 19-->
+                <div id="tony" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/tony.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Tony<br>"Mono"</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 20-->
+                <div id="riley" class="portfolio-item col-md-3 col-lg-3 mb-3 character" onclick="togglePhoto(this)">
+                    <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        </div>
+                        <img class="img-fluid" src="people/riley.jpg" alt="">
+                        <p class="h2 p-3 mb-2 text-white text-center">Riley<br>"Trash"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed"><a
+            class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a></div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
